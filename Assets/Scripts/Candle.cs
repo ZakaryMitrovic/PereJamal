@@ -6,6 +6,8 @@ public class Candle : MonoBehaviour
 {
     [SerializeField] private GameObject _fire;
     [SerializeField] private Material _waxAllumer;
+    [SerializeField] private LumierePuzzle _light;
+    [SerializeField] private PressurePlate _pressurePlate;
 
     void OnTriggerEnter(Collider other)
     {
@@ -15,6 +17,9 @@ public class Candle : MonoBehaviour
             Material[] mats = GetComponent<MeshRenderer>().materials;
             mats[0] = _waxAllumer;
             GetComponent<MeshRenderer>().materials = mats;
+
+            _light.AllumerLight(2);
+            _pressurePlate.isAtPuzzle3 = true;
         }
     }
 }
