@@ -25569,7 +25569,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-216486
+  m_Name: pb_Mesh41850
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -75389,7 +75389,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-191236
+  m_Name: pb_Mesh42144
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -75886,7 +75886,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-211702
+  m_Name: pb_Mesh42338
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -99970,7 +99970,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-242512
+  m_Name: pb_Mesh40126
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -104636,7 +104636,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 21f83c9cc45cb3743b247123161160ba, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -104985,7 +104985,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 2c5aa28a77a00da46acfca154d88f0b6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -106215,7 +106215,7 @@ GameObject:
   - component: {fileID: 8979180031816412985}
   - component: {fileID: 8979180031816412986}
   m_Layer: 0
-  m_Name: Chandelle2
+  m_Name: Chandelle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -106247,6 +106247,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _fire: {fileID: 1084711746}
+  _matWaxAllumer: {fileID: 2100000, guid: ec55fa1701e202049ad7ba7851e3b410, type: 2}
 --- !u!1 &9014776603807567076
 GameObject:
   m_ObjectHideFlags: 0
