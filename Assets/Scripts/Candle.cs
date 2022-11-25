@@ -8,6 +8,8 @@ public class Candle : MonoBehaviour
     [SerializeField] private Material _waxAllumer;
     [SerializeField] private LumierePuzzle _light;
     [SerializeField] private PressurePlate _pressurePlate;
+    [SerializeField] private AudioClip sonFeu;
+    [SerializeField] private AudioSource _audio;
 
     void OnTriggerEnter(Collider other)
     {
@@ -20,6 +22,9 @@ public class Candle : MonoBehaviour
 
             _light.AllumerLight(2);
             _pressurePlate.isAtPuzzle3 = true;
+
+            _audio = GetComponent<AudioSource>();
+            _audio.PlayOneShot(sonFeu);
         }
     }
 }

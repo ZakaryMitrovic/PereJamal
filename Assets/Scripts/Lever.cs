@@ -10,6 +10,7 @@ public class Lever : MonoBehaviour
     [SerializeField] private AudioSource _audio;
     [SerializeField] private AudioClip _sonLever;
 
+    private bool dejaActiver = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,15 +21,16 @@ public class Lever : MonoBehaviour
     void Update()
     {
         ActiverLevier();
-        Debug.Log(hJ.angle);
     }
 
     private void ActiverLevier(){
         if(hJ.angle >= 170){
-            Debug.Log("it works");
             pS.DebarrerPorteSousSol();
             pLight.AllumerLight(4);
-            _audio.PlayOneShot(_sonLever);
+            if(dejaActiver == false){
+                dejaActiver = true;
+                _audio.PlayOneShot(_sonLever);
+            }
         }
     }
 }

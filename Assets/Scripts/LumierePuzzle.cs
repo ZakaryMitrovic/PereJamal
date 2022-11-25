@@ -5,7 +5,6 @@ using UnityEngine;
 public class LumierePuzzle : MonoBehaviour
 {
     [SerializeField] private GameObject[] lights;
-    [SerializeField] private AudioClip sonLum;
 
     public void AllumerLight(int index)
     {
@@ -14,6 +13,5 @@ public class LumierePuzzle : MonoBehaviour
             lights[i].SetActive(false);
         }
         lights[index].SetActive(true);
-        lights[index].GetComponent<AudioSource>().PlayOneShot(sonLum);
     }
 }
