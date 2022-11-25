@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class PortesSousSol : MonoBehaviour
 {
-    [SerializeField] private Rigidbody rb;
+    [SerializeField] private Animator anim;
     // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
-        rb.freezeRotation = true;
+        anim = GetComponent<Animator>();
+        anim.SetBool("ouvrirPortes", false);
     }
 
     // Update is called once per frame
@@ -19,6 +19,6 @@ public class PortesSousSol : MonoBehaviour
     }
 
     public void DebarrerPorteSousSol(){
-        rb.freezeRotation = false;
+        anim.SetBool("ouvrirPortes", true);
     }
 }

@@ -5,8 +5,8 @@ using UnityEngine;
 public class Lever : MonoBehaviour
 {
     [SerializeField] private HingeJoint hJ;
-    [SerializeField] private PortesSousSol pSG;
-    [SerializeField] private PortesSousSol pSD;
+    [SerializeField] private PortesSousSol pS;
+    [SerializeField] private LumierePuzzle pLight;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,8 +23,8 @@ public class Lever : MonoBehaviour
     private void ActiverLevier(){
         if(hJ.angle >= 170){
             Debug.Log("it works");
-            pSG.DebarrerPorteSousSol();
-            pSD.DebarrerPorteSousSol();
+            pS.DebarrerPorteSousSol();
+            pLight.AllumerLight(4);
         }
     }
 }
