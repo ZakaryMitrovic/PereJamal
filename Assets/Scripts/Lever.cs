@@ -7,6 +7,9 @@ public class Lever : MonoBehaviour
     [SerializeField] private HingeJoint hJ;
     [SerializeField] private PortesSousSol pS;
     [SerializeField] private LumierePuzzle pLight;
+    [SerializeField] private AudioSource _audio;
+    [SerializeField] private AudioClip _sonLever;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +28,7 @@ public class Lever : MonoBehaviour
             Debug.Log("it works");
             pS.DebarrerPorteSousSol();
             pLight.AllumerLight(4);
+            _audio.PlayOneShot(_sonLever);
         }
     }
 }
