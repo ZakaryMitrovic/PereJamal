@@ -8,6 +8,7 @@ public class Piano : MonoBehaviour
     [SerializeField] GameObject _briquet;
     [SerializeField] AudioClip[] _note;
     [SerializeField] AudioSource _audio;
+    [SerializeField] LumierePuzzle _lumierePuzzle;
 
     string[] notes = {"Do", "Re", "Mi", "Fa", "Sol", "La", "Si"};
 
@@ -29,6 +30,7 @@ public class Piano : MonoBehaviour
         _anim.SetTrigger(notes[noteIndex]);
         _briquet.SetActive(true);
         _audio.PlayOneShot(_note[noteIndex]);
+        _lumierePuzzle.AllumerLight(5);
     }
 
 }

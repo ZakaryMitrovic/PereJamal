@@ -1,17 +1,40 @@
-https://www.deviantart.com/ramosburrito/art/Cloudy-Night-Sky-96128059
+Sources:
 
-https://svs.gsfc.nasa.gov/4720
+Textures:
+Lune: https://svs.gsfc.nasa.gov/4720
+Plancher: www.textures.com/download/PBR1034/142368
+Tapis: https://www.textures.com/download/PBR1061/142855
+Mur de brique: https://www.textures.com/download/3DScans0552/136382
+Fenêtre: https://www.textures.com/download/WindowStainedGlass0128/66345
+Bois: https://www.textures.com/download/3DScans0581/136964
+Statue: https://www.textures.com/download/3DScans0398/132974
 
-www.textures.com/download/PBR1034/142368
+Pour les mains:
+https://drive.google.com/file/d/10b39IekUdpBHlcTslZ-BlNRyH5uqPUe1/view (Donné par Occulus)
+https://developer.oculus.com/downloads/package/oculus-hand-models/
 
-https://www.textures.com/download/PBR1061/142855
-
-https://www.textures.com/download/3DScans0552/136382
-
-https://www.youtube.com/watch?v=dnVjxr1ScOI
-
-https://www.textures.com/download/WindowStainedGlass0128/66345
-
-https://www.textures.com/download/3DScans0581/136964
-
-Pour les mains: https://drive.google.com/file/d/10b39IekUdpBHlcTslZ-BlNRyH5uqPUe1/view (Donné par Occulus)
+Sons:
+https://freesound.org/people/Jaz_the_MAN_2/sounds/316912/
+https://freesound.org/people/Jaz_the_MAN_2/sounds/316908/
+https://freesound.org/people/Jaz_the_MAN_2/sounds/316906/
+https://freesound.org/people/Jaz_the_MAN_2/sounds/316904/
+https://freesound.org/people/Jaz_the_MAN_2/sounds/316902/
+https://freesound.org/people/Jaz_the_MAN_2/sounds/316901/
+https://freesound.org/people/Jaz_the_MAN_2/sounds/316913/
+https://freesound.org/people/Jaz_the_MAN_2/sounds/316898/
+https://freesound.org/people/Jaz_the_MAN_2/sounds/316913/
+https://freesound.org/people/IPaddeh/sounds/422858/
+https://freesound.org/people/SoundDesignForYou/sounds/646689/
+https://freesound.org/people/lennyboy/sounds/275182/
+https://freesound.org/people/VitaminL/sounds/244992/
+https://freesound.org/people/jemburyturner/sounds/273466/
+https://freesound.org/people/DrMinky/sounds/167048/
+https://freesound.org/people/32cheeseman32/sounds/175942/
+https://freesound.org/people/SpaceJoe/sounds/524105/
+https://freesound.org/people/mfearnley/sounds/434145/
+https://freesound.org/people/kellyconidi/sounds/218829/
+https://freesound.org/people/MihirFreeSound/sounds/410972/
+https://freesound.org/people/an_tony/sounds/218725/
+https://freesound.org/people/Martineerok/sounds/486406/
+https://freesound.org/people/InspectorJ/sounds/346641/
+https://freesound.org/people/icaroferre/sounds/86891/

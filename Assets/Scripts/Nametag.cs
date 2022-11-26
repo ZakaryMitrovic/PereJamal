@@ -5,6 +5,7 @@ using UnityEngine;
 public class Nametag : MonoBehaviour
 {
     [SerializeField] private GameObject key;
+    [SerializeField] private LumierePuzzle lumierePuzzle;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,5 +21,11 @@ public class Nametag : MonoBehaviour
     public void nameTag(){
         Debug.Log("Works");
         key.SetActive(true);
+        lumierePuzzle.AllumerLight(6);
+    }
+
+    public void AllumerLumiereFinale()
+    {
+        lumierePuzzle.AllumerLight(7);
     }
 }

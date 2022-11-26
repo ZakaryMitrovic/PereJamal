@@ -26,9 +26,9 @@ public class Lever : MonoBehaviour
     private void ActiverLevier(){
         if(hJ.angle >= 170){
             pS.DebarrerPorteSousSol();
-            pLight.AllumerLight(4);
             if(dejaActiver == false){
                 dejaActiver = true;
+                pLight.AllumerLight(4);
                 _audio.PlayOneShot(_sonLever);
             }
         }
