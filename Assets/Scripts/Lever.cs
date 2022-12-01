@@ -9,6 +9,7 @@ public class Lever : MonoBehaviour
     [SerializeField] private LumierePuzzle pLight;
     [SerializeField] private AudioSource _audio;
     [SerializeField] private AudioClip _sonLever;
+    [SerializeField] private GameObject _Statue;
 
     private bool dejaActiver = false;
     // Start is called before the first frame update
@@ -24,7 +25,8 @@ public class Lever : MonoBehaviour
     }
 
     private void ActiverLevier(){
-        if(hJ.angle >= 170){
+        if(hJ.angle >= 90){
+            _Statue.transform.Rotate(0,0,1f);
             pS.DebarrerPorteSousSol();
             if(dejaActiver == false){
                 dejaActiver = true;
