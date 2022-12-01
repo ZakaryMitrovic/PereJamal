@@ -45,6 +45,7 @@ public class Statue : MonoBehaviour
         }else{
             isGood1 = false;
         }
+
         //SUD
         if (_statue2.transform.rotation.z >= -0.2 && _statue2.transform.rotation.z <= 0.2){
             isGood2 = true;
@@ -52,18 +53,19 @@ public class Statue : MonoBehaviour
             isGood2 = false;
         }
 
+        //OUEST
         if (_statue3.transform.rotation.z >= -0.6 && _statue3.transform.rotation.z <= -0.2){
             isGood3 = true;
         }else{
             isGood3 = false;
         }
 
-        if (_statue4.transform.rotation.z >= 0.3 && _statue4.transform.rotation.z <= 0.6){
+        //EST
+        if (_statue4.transform.rotation.z >= 0.2 && _statue4.transform.rotation.z <= 0.6){
             isGood4 = true;
         }else{
             isGood4 = false;
         }
-
     }
 
     void Validation(){
