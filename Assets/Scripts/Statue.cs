@@ -42,6 +42,7 @@ public class Statue : MonoBehaviour
         //NORD
         if (_statue1.transform.rotation.z >= 0.6 && _statue1.transform.rotation.z <= 0.8){
             isGood1 = true;
+            pLight.AllumerLight(4);
         }else{
             isGood1 = false;
         }
@@ -49,6 +50,7 @@ public class Statue : MonoBehaviour
         //SUD
         if (_statue2.transform.rotation.z >= -0.2 && _statue2.transform.rotation.z <= 0.2){
             isGood2 = true;
+            pLight.AllumerLight(4);
         }else{
             isGood2 = false;
         }
@@ -56,6 +58,7 @@ public class Statue : MonoBehaviour
         //OUEST
         if (_statue3.transform.rotation.z >= -0.6 && _statue3.transform.rotation.z <= -0.2){
             isGood3 = true;
+            pLight.AllumerLight(4);
         }else{
             isGood3 = false;
         }
@@ -63,6 +66,7 @@ public class Statue : MonoBehaviour
         //EST
         if (_statue4.transform.rotation.z >= 0.2 && _statue4.transform.rotation.z <= 0.6){
             isGood4 = true;
+            pLight.AllumerLight(4);
         }else{
             isGood4 = false;
         }
@@ -71,7 +75,6 @@ public class Statue : MonoBehaviour
     void Validation(){
         if (isGood1 == true && isGood2 == true && isGood3 == true && isGood4 == true){
             pS.DebarrerPorteSousSol();
-            pLight.AllumerLight(4);
             pSAudio.PlayOneShot(SonPorte);
         }
     }
