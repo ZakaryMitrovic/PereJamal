@@ -18,10 +18,20 @@ public class Lighter : MonoBehaviour
         _fire.SetActive(true);
         _audio.PlayOneShot(_sonAllumer);
 
-        if(lHand.selectTarget.tag == "lighter"){
+         if(lHand.hasSelection == true){
+
             _leftHand.SetActive(true);
-        }else if(rHand.selectTarget.tag == "lighter"){
+
+        }else if(rHand.hasSelection == true){
+
             _rightHand.SetActive(true);
+
+        }else{
+
+            _leftHand.SetActive(false);
+
+            _rightHand.SetActive(false);
+
         }
     }
 
