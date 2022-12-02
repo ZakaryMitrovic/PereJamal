@@ -8,8 +8,7 @@ public class Lighter : MonoBehaviour
     [SerializeField] private GameObject _fire;
     [SerializeField] private AudioSource _audio;
     [SerializeField] private AudioClip _sonAllumer;
-    public XRDirectInteractor rHand;
-    public XRDirectInteractor lHand;
+    public XRDirectInteractor rHand, lHand;
     public GameObject _leftHand;
     public GameObject _rightHand;
 
@@ -18,11 +17,15 @@ public class Lighter : MonoBehaviour
         _fire.SetActive(true);
         _audio.PlayOneShot(_sonAllumer);
 
-        if(lHand.selectTarget.tag == "lighter"){
+        if(lHand.hasSelection == true){
             _leftHand.SetActive(true);
-        }else if(rHand.selectTarget.tag == "lighter"){
+        }else if(rHand.hasSelection == true){
             _rightHand.SetActive(true);
+        }else{
+            _leftHand.SetActive(false);
+            _rightHand.SetActive(false);
         }
+        
     }
 
     public void Eteindre()
