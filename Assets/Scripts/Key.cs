@@ -3,38 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
-public class Lever : MonoBehaviour
+public class Key : MonoBehaviour
 {
-    [SerializeField] private HingeJoint hJ;
-    [SerializeField] private AudioSource _audio;
-    [SerializeField] private AudioClip _sonLever;
-    [SerializeField] private GameObject _Statue;
     public XRDirectInteractor rHand, lHand;
     public GameObject _leftHand;
     public GameObject _rightHand;
-
-    private bool dejaActiver = false;
     // Start is called before the first frame update
     void Start()
     {
-        hJ=GetComponent<HingeJoint>();
         _leftHand.SetActive(false);
         _rightHand.SetActive(false);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if(hJ.angle >= 90){
-            _Statue.transform.Rotate(0,0,1f);
-            if(dejaActiver == false){
-                dejaActiver = true;
-                _audio.PlayOneShot(_sonLever);
-            }
-        }
-    }
-
-    public void ActiverLevier(){
+    public void AjoutMain(){
         if(lHand.hasSelection == true){
             _leftHand.SetActive(true);
         }else if(rHand.hasSelection == true){
