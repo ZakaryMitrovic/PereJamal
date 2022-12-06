@@ -1,12 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class Nametag : MonoBehaviour
 {
     [SerializeField] private GameObject[] socket;
     [SerializeField] private GameObject key;
     [SerializeField] private LumierePuzzle lumierePuzzle;
+    public XRDirectInteractor rHand, lHand;
+    public GameObject _leftHand;
+    public GameObject _rightHand;
     // Start is called before the first frame update
     void Start()
     {
@@ -43,6 +47,20 @@ public class Nametag : MonoBehaviour
     public void AllumerLumiereFinale()
     {
         lumierePuzzle.AllumerLight(7);
+    }
+    public void ActiverMain(){
+        if(lHand.hasSelection == true){
+            _leftHand.SetActive(true);
+        }else if(rHand.hasSelection == true){
+            _rightHand.SetActive(true);
+        }else{
+            _leftHand.SetActive(false);
+            _rightHand.SetActive(false);
+        }
+    }
+    public void EnleverMain(){
+        _leftHand.SetActive(false);
+        _rightHand.SetActive(false);
     }
 }
 
