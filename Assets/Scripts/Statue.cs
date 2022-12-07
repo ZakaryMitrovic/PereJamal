@@ -32,17 +32,17 @@ public class Statue : MonoBehaviour
     {
         CheckStatues();
         Validation();
-        // Debug.Log("IsGood1: "+isGood1);
-        // Debug.Log("IsGood2: "+isGood2);
-        // Debug.Log("IsGood3: "+isGood3);
-        // Debug.Log("IsGood4: "+isGood4);
+        Debug.Log("IsGood1: "+isGood1);
+        Debug.Log("IsGood2: "+isGood2);
+        Debug.Log("IsGood3: "+isGood3);
+        Debug.Log("IsGood4: "+isGood4);
+        Debug.Log(_statue4.transform.rotation.z);
     }
 
     void CheckStatues(){
         //NORD
         if (_statue1.transform.rotation.z >= 0.6 && _statue1.transform.rotation.z <= 0.8){
             isGood1 = true;
-            pLight.AllumerLight(4);
         }else{
             isGood1 = false;
         }
@@ -50,23 +50,20 @@ public class Statue : MonoBehaviour
         //SUD
         if (_statue2.transform.rotation.z >= -0.2 && _statue2.transform.rotation.z <= 0.2){
             isGood2 = true;
-            pLight.AllumerLight(4);
         }else{
             isGood2 = false;
         }
 
         //OUEST
-        if (_statue3.transform.rotation.z >= -0.6 && _statue3.transform.rotation.z <= -0.2){
+        if (_statue3.transform.rotation.z >= 0.2 && _statue3.transform.rotation.z <= 0.6){
             isGood3 = true;
-            pLight.AllumerLight(4);
         }else{
             isGood3 = false;
         }
 
         //EST
-        if (_statue4.transform.rotation.z >= 0.2 && _statue4.transform.rotation.z <= 0.6){
+        if (_statue4.transform.rotation.z >= 0.3 && _statue4.transform.rotation.z <= 0.6){
             isGood4 = true;
-            pLight.AllumerLight(4);
         }else{
             isGood4 = false;
         }
@@ -76,6 +73,7 @@ public class Statue : MonoBehaviour
         if (isGood1 == true && isGood2 == true && isGood3 == true && isGood4 == true){
             pS.DebarrerPorteSousSol();
             pSAudio.PlayOneShot(SonPorte);
+            pLight.AllumerLight(4);
         }
     }
 }

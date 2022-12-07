@@ -36,13 +36,9 @@ public class Plates : MonoBehaviour
     void Update()
     {
         if(isGood1 == true){
-            Debug.Log("1");
             if(isGood2 == true){
-                Debug.Log("2");
                 if(isGood3 == true){
-                    Debug.Log("3");
                     if(isGood4 == true){
-                        Debug.Log("4");
                         for(int i=0; i<_rbLevier.Length; i++){
                             _rbLevier[i].freezeRotation = false;
                         }
@@ -66,11 +62,6 @@ public class Plates : MonoBehaviour
             isGood3=false;
             isGood4=false;
         }
-
-        Debug.Log("isGood1:" + isGood1);
-        Debug.Log("isGood2:" + isGood2);
-        Debug.Log("isGood3:" + isGood3);
-        Debug.Log("isGood4:" + isGood4);
     }
 
     public void PeserPlaque1(){

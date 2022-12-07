@@ -43,18 +43,18 @@ public class Socket : MonoBehaviour
             SocketFinal();
         }
         //Petite condition pour dire si la plaque est bien mis sur le bon socket, de disable son grab interactable
-        if(isGood1 == true){
-            Invoke("AppelScriptJon", 3f);
-        }
-        if(isGood2 == true){
-            Invoke("AppelScriptMat", 3f);
-        }
-        if(isGood3 == true){
-            Invoke("AppelScriptOli", 3f);
-        }
-        if(isGood4== true){
-            Invoke("AppelScriptZak", 3f);
-        }
+        // if(isGood1 == true){
+        //     Invoke("AppelScriptJon", 3f);
+        // }
+        // if(isGood2 == true){
+        //     Invoke("AppelScriptMat", 3f);
+        // }
+        // if(isGood3 == true){
+        //     Invoke("AppelScriptOli", 3f);
+        // }
+        // if(isGood4== true){
+        //     Invoke("AppelScriptZak", 3f);
+        // }
 
     }
     public void SocketFinal(){
