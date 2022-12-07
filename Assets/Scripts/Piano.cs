@@ -10,6 +10,11 @@ public class Piano : MonoBehaviour
     [SerializeField] AudioSource _audio;
     [SerializeField] LumierePuzzle _lumierePuzzle;
 
+    private bool isGood1;
+    private bool isGood2;
+    private bool isGood3;
+    private bool isGood4;
+
     string[] notes = {"Do", "Re", "Mi", "Fa", "Sol", "La", "Si"};
 
     // Start is called before the first frame update
@@ -18,19 +23,63 @@ public class Piano : MonoBehaviour
         _audio = GetComponent<AudioSource>();
         _anim.GetComponent<Animator>();
         _briquet.SetActive(false);
+        isGood1 = false;
+        isGood2 = false;
+        isGood3 = false;
+        isGood4 = false;
     }
 
     // Update is called once per frame
     void Update()
     {
         
+        if(isGood1 == true){
+            if(isGood2 == true){
+                if(isGood3 == true){
+                    if(isGood4 == true){
+                        _lumierePuzzle.AllumerLight(5);
+                         _briquet.SetActive(true);
+                    }
+                }else if(isGood4 == true){
+                    isGood1=false;
+                    isGood2=false;
+                    isGood3=false;
+                    isGood4=false;
+                }
+            }else if(isGood4 == true || isGood3==true){
+                isGood1=false;
+                isGood2=false;
+                isGood3=false;
+                isGood4=false;
+            }
+        }else{
+            isGood1=false;
+            isGood2=false;
+            isGood3=false;
+            isGood4=false;
+        }
     }
 
     public void JouerNote(int noteIndex){
         _anim.SetTrigger(notes[noteIndex]);
-        _briquet.SetActive(true);
         _audio.PlayOneShot(_note[noteIndex]);
-        _lumierePuzzle.AllumerLight(5);
+
+        if(noteIndex == 0){
+            Debug.Log("DO");
+            isGood1=true;
+        }
+        if(noteIndex == 5){
+            Debug.Log("LA");
+            isGood2=true;
+        }
+        if(noteIndex == 2){
+            Debug.Log("MI");
+            isGood3=true;
+        }
+        if(noteIndex == 3){
+            Debug.Log("FA");
+            isGood4=true;
+        }
     }
 
 }
