@@ -33,15 +33,17 @@ public class Statue : MonoBehaviour
         CheckStatues();
         Validation();
         Debug.Log("IsGood1: "+isGood1);
-        Debug.Log("IsGood2: "+isGood2);
-        Debug.Log("IsGood3: "+isGood3);
-        Debug.Log("IsGood4: "+isGood4);
-        Debug.Log(_statue4.transform.rotation.z);
+        //Debug.Log("IsGood2: "+isGood2);
+        //Debug.Log("IsGood3: "+isGood3);
+        //Debug.Log("IsGood4: "+isGood4);
+        Debug.Log(_statue1.transform.rotation.z);
     }
 
     void CheckStatues(){
+        //Quelque des statues on besoin de leur angles negative car sinon on doit faire un tour avant de pouvoir les mettre a true
+
         //NORD
-        if (_statue1.transform.rotation.z >= 0.6 && _statue1.transform.rotation.z <= 0.8){
+        if (_statue1.transform.rotation.z >= 0.6 && _statue1.transform.rotation.z <= 0.8 || _statue1.transform.rotation.z >= -0.8 && _statue1.transform.rotation.z <= -0.6){
             isGood1 = true;
         }else{
             isGood1 = false;
@@ -55,14 +57,14 @@ public class Statue : MonoBehaviour
         }
 
         //OUEST
-        if (_statue3.transform.rotation.z >= 0.2 && _statue3.transform.rotation.z <= 0.6){
+        if (_statue3.transform.rotation.z >= 0.2 && _statue3.transform.rotation.z <= 0.6 || _statue3.transform.rotation.z >= -0.6 && _statue3.transform.rotation.z <= -0.2){
             isGood3 = true;
         }else{
             isGood3 = false;
         }
 
         //EST
-        if (_statue4.transform.rotation.z >= 0.3 && _statue4.transform.rotation.z <= 0.6){
+        if (_statue4.transform.rotation.z >= 0.3 && _statue4.transform.rotation.z <= 0.6 || _statue4.transform.rotation.z >= -0.6 && _statue4.transform.rotation.z <= -0.3){
             isGood4 = true;
         }else{
             isGood4 = false;
