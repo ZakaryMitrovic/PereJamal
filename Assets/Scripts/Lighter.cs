@@ -8,6 +8,7 @@ public class Lighter : MonoBehaviour
     [SerializeField] private GameObject _fire;
     [SerializeField] private AudioSource _audio;
     [SerializeField] private AudioClip _sonAllumer;
+
     public XRDirectInteractor rHand, lHand;
     public GameObject _leftHand;
     public GameObject _rightHand;

@@ -29,37 +29,6 @@ public class Piano : MonoBehaviour
         isGood4 = false;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-        if(isGood1 == true){
-            if(isGood2 == true){
-                if(isGood3 == true){
-                    if(isGood4 == true){
-                        _lumierePuzzle.AllumerLight(5);
-                         _briquet.SetActive(true);
-                    }
-                }else if(isGood4 == true){
-                    isGood1=false;
-                    isGood2=false;
-                    isGood3=false;
-                    isGood4=false;
-                }
-            }else if(isGood4 == true || isGood3==true){
-                isGood1=false;
-                isGood2=false;
-                isGood3=false;
-                isGood4=false;
-            }
-        }else{
-            isGood1=false;
-            isGood2=false;
-            isGood3=false;
-            isGood4=false;
-        }
-    }
-
     public void JouerNote(int noteIndex){
         _anim.SetTrigger(notes[noteIndex]);
         _audio.PlayOneShot(_note[noteIndex]);
@@ -79,6 +48,34 @@ public class Piano : MonoBehaviour
         if(noteIndex == 3){
             Debug.Log("FA");
             isGood4=true;
+        }
+        ValidationNote();
+    }
+    void ValidationNote(){
+        if(isGood1 == true){
+            if(isGood2 == true){
+                if(isGood3 == true){
+                    if(isGood4 == true){
+                        _briquet.SetActive(true);
+                        _lumierePuzzle.AllumerLight(5);
+                    }
+                }else if(isGood4 == true){
+                    isGood1=false;
+                    isGood2=false;
+                    isGood3=false;
+                    isGood4=false;
+                }
+            }else if(isGood4 == true || isGood3==true){
+                isGood1=false;
+                isGood2=false;
+                isGood3=false;
+                isGood4=false;
+            }
+        }else{
+            isGood1=false;
+            isGood2=false;
+            isGood3=false;
+            isGood4=false;
         }
     }
 
