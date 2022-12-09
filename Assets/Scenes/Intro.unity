@@ -31134,12 +31134,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 578988462}
   m_Mesh: {fileID: -5928785198427282456, guid: fc057ed39db743d4caf9bda15853fa61, type: 3}
---- !u!54 &580456911 stripped
-Rigidbody:
-  m_CorrespondingSourceObject: {fileID: 1629716317857609569, guid: b142c189abceafd4fa430e16d74e6995,
-    type: 3}
-  m_PrefabInstance: {fileID: 1419622564}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &584172894
 GameObject:
   m_ObjectHideFlags: 0
@@ -48632,12 +48626,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 908029253}
   m_Mesh: {fileID: -5928785198427282456, guid: fc057ed39db743d4caf9bda15853fa61, type: 3}
---- !u!54 &917157925 stripped
-Rigidbody:
-  m_CorrespondingSourceObject: {fileID: 1629716317857609569, guid: b142c189abceafd4fa430e16d74e6995,
-    type: 3}
-  m_PrefabInstance: {fileID: 1833352951}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &917372456
 GameObject:
   m_ObjectHideFlags: 0
@@ -59711,12 +59699,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1173056793}
   m_Mesh: {fileID: 8385836491182413749, guid: 4b357d60db3ea254db5f13ba61442e76, type: 3}
---- !u!54 &1176717058 stripped
-Rigidbody:
-  m_CorrespondingSourceObject: {fileID: 1629716317857609569, guid: b142c189abceafd4fa430e16d74e6995,
-    type: 3}
-  m_PrefabInstance: {fileID: 1326162610}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1180324189
 GameObject:
   m_ObjectHideFlags: 0
@@ -87006,15 +86988,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8dfd0c23e8b00104e98e1e090c7af4de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _light: {fileID: 358612990}
-  _rbLevier:
-  - {fileID: 7350893721708433038}
-  - {fileID: 917157925}
-  - {fileID: 580456911}
-  - {fileID: 1176717058}
-  _audio: {fileID: 1782427994}
-  _sonPressure: {fileID: 8300000, guid: 1fd09acdc65272c40995d2feb9d74b3f, type: 3}
-  isAtPuzzle3: 0
 --- !u!82 &1782427994
 AudioSource:
   m_ObjectHideFlags: 0
@@ -108428,12 +108401,6 @@ Transform:
   m_Father: {fileID: 4511462022454726029}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &7350893721708433038 stripped
-Rigidbody:
-  m_CorrespondingSourceObject: {fileID: 1629716317857609569, guid: b142c189abceafd4fa430e16d74e6995,
-    type: 3}
-  m_PrefabInstance: {fileID: 8115051946191878639}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &7366239390933306472
 GameObject:
   m_ObjectHideFlags: 0
