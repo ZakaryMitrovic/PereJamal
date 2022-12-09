@@ -42,28 +42,28 @@ public class Statue : MonoBehaviour
     void CheckStatues(){
         //Quelque des statues on besoin de leur angles negative car sinon on doit faire un tour avant de pouvoir les mettre a true
 
-        //NORD
+        //NORD (St-Marie)
         if (_statue1.transform.rotation.z >= 0.6 && _statue1.transform.rotation.z <= 0.8 || _statue1.transform.rotation.z >= -0.8 && _statue1.transform.rotation.z <= -0.6){
             isGood1 = true;
         }else{
             isGood1 = false;
         }
 
-        //SUD
+        //SUD (St-Peter)
         if (_statue2.transform.rotation.z >= -0.2 && _statue2.transform.rotation.z <= 0.2){
             isGood2 = true;
         }else{
             isGood2 = false;
         }
 
-        //OUEST
+        //OUEST (St-Joseph)
         if (_statue3.transform.rotation.z >= 0.2 && _statue3.transform.rotation.z <= 0.6 || _statue3.transform.rotation.z >= -0.6 && _statue3.transform.rotation.z <= -0.2){
             isGood3 = true;
         }else{
             isGood3 = false;
         }
 
-        //EST
+        //EST (St-Jude)
         if (_statue4.transform.rotation.z >= 0.3 && _statue4.transform.rotation.z <= 0.6 || _statue4.transform.rotation.z >= -0.6 && _statue4.transform.rotation.z <= -0.3){
             isGood4 = true;
         }else{
