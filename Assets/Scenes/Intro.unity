@@ -5749,7 +5749,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Jouer
+  m_text: Play
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 846868b0db1e59a499551c2a72472460, type: 2}
   m_sharedMaterial: {fileID: 2312060796354613343, guid: 846868b0db1e59a499551c2a72472460,
@@ -6148,7 +6148,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Pere Jamal
+  m_text: Father Jamal
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 846868b0db1e59a499551c2a72472460, type: 2}
   m_sharedMaterial: {fileID: 2312060796354613343, guid: 846868b0db1e59a499551c2a72472460,
@@ -6212,7 +6212,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -339.57492, w: 0}
+  m_margin: {x: -26.549332, y: 0, z: -389.13126, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -109677,6 +109677,10 @@ MonoBehaviour:
   _fire: {fileID: 5895977}
   _audio: {fileID: 8090473121379316573}
   _sonAllumer: {fileID: 8300000, guid: cc510b71a191e2242be8d9eae20ce93d, type: 3}
+  rHand: {fileID: 0}
+  lHand: {fileID: 0}
+  _leftHand: {fileID: 0}
+  _rightHand: {fileID: 0}
 --- !u!82 &8090473121379316573
 AudioSource:
   m_ObjectHideFlags: 0
@@ -111166,9 +111170,12 @@ MonoBehaviour:
   _fire: {fileID: 1084711746}
   _waxAllumer: {fileID: 2100000, guid: de67a8460a1c5b44d9cca6ca96b42f0a, type: 2}
   _light: {fileID: 358612990}
-  _pressurePlate: {fileID: 1782427993}
+  _plates: {fileID: 0}
   sonFeu: {fileID: 8300000, guid: 022d3d86f68148d46b534120de771570, type: 3}
   _audio: {fileID: 8979180031816412987}
+  allumer: 0
+  _alreadyLight: 0
+  _candles: {fileID: 0}
 --- !u!82 &8979180031816412987
 AudioSource:
   m_ObjectHideFlags: 0

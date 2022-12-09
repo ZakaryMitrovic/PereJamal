@@ -26,5 +26,8 @@ public class Timer : MonoBehaviour
             int seconde = temps - min*60;
             _time.text = min + ":" + seconde;
         }
+        if(temps <= 0){
+            
+        }
     }
 }
