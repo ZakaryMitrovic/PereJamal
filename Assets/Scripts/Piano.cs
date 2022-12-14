@@ -60,6 +60,7 @@ public class Piano : MonoBehaviour
                         _lumierePuzzle.AllumerLight(5);
                     }
                 }else if(isGood4 == true){
+                    _audio.PlayOneShot(_note[7]);
                     isGood1=false;
                     isGood2=false;
                     isGood3=false;
@@ -70,12 +71,14 @@ public class Piano : MonoBehaviour
                 isGood2=false;
                 isGood3=false;
                 isGood4=false;
+                _audio.PlayOneShot(_note[7]);
             }
         }else{
             isGood1=false;
             isGood2=false;
             isGood3=false;
             isGood4=false;
+            _audio.PlayOneShot(_note[7]);
         }
     }
 

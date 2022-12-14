@@ -7,11 +7,13 @@ public class Lever : MonoBehaviour
 {
     [SerializeField] private HingeJoint hJ;
     [SerializeField] private AudioSource _audio;
+    [SerializeField] private AudioSource _audioStatue;
     [SerializeField] private AudioClip _sonLever;
     [SerializeField] private GameObject _Statue;
     public XRDirectInteractor rHand, lHand;
     public GameObject _leftHand;
     public GameObject _rightHand;
+
 
     private bool dejaActiver = false;
     // Start is called before the first frame update
@@ -20,6 +22,7 @@ public class Lever : MonoBehaviour
         hJ=GetComponent<HingeJoint>();
         _leftHand.SetActive(false);
         _rightHand.SetActive(false);
+        _audioStatue.enabled = true;
     }
 
     // Update is called once per frame
@@ -27,10 +30,13 @@ public class Lever : MonoBehaviour
     {
         if(hJ.angle >= 90){
             _Statue.transform.Rotate(0,0,1f);
+            _audioStatue.enabled = true;
             if(dejaActiver == false){
                 dejaActiver = true;
                 _audio.PlayOneShot(_sonLever);
             }
+        }else{
+            _audioStatue.enabled = false;
         }
     }
 

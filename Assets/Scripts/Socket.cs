@@ -39,9 +39,9 @@ public class Socket : MonoBehaviour
         // Debug.Log(isGood4); 
 
         //Appel cette fonction lorsque les 4 nametag sont dans les bons sockets
-        if(isGood1==true && isGood2==true && isGood3==true && isGood4 == true){
-            SocketFinal();
-        }
+        // if(isGood1==true && isGood2==true && isGood3==true && isGood4 == true){
+        //     SocketFinal();
+        // }
         //Petite condition pour dire si la plaque est bien mis sur le bon socket, de disable son grab interactable
         // if(isGood1 == true){
         //     Invoke("AppelScriptJon", 3f);
@@ -79,6 +79,12 @@ public class Socket : MonoBehaviour
 
         if(socket[3] == other.CompareTag("Z")){
             isGood4=true;
+        }
+        Validation();
+    }
+    void Validation(){
+         if(isGood1==true && isGood2==true && isGood3==true && isGood4 == true){
+            SocketFinal();
         }
     }
 

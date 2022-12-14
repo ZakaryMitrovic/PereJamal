@@ -32,39 +32,39 @@ public class Statue : MonoBehaviour
     {
         CheckStatues();
         Validation();
-        Debug.Log("IsGood1: "+isGood1);
+        //Debug.Log("IsGood1: "+isGood1);
         //Debug.Log("IsGood2: "+isGood2);
-        //Debug.Log("IsGood3: "+isGood3);
-        //Debug.Log("IsGood4: "+isGood4);
-        Debug.Log(_statue1.transform.rotation.z);
+        Debug.Log("IsGood3: "+isGood3);
+        Debug.Log("IsGood4: "+isGood4);
+        //Debug.Log(_statue2.transform.rotation.z);
     }
 
     void CheckStatues(){
         //Quelque des statues on besoin de leur angles negative car sinon on doit faire un tour avant de pouvoir les mettre a true
 
-        //NORD (St-Marie)
+        //(St-Marie)
         if (_statue1.transform.rotation.z >= 0.6 && _statue1.transform.rotation.z <= 0.8 || _statue1.transform.rotation.z >= -0.8 && _statue1.transform.rotation.z <= -0.6){
             isGood1 = true;
         }else{
             isGood1 = false;
         }
 
-        //SUD (St-Peter)
-        if (_statue2.transform.rotation.z >= -0.2 && _statue2.transform.rotation.z <= 0.2){
+        //(St-Peter)
+        if (_statue2.transform.rotation.z >= 0.6 && _statue2.transform.rotation.z <= 0.8 || _statue2.transform.rotation.z >= -0.8 && _statue2.transform.rotation.z <= -0.6){
             isGood2 = true;
         }else{
             isGood2 = false;
         }
 
-        //OUEST (St-Joseph)
-        if (_statue3.transform.rotation.z >= 0.2 && _statue3.transform.rotation.z <= 0.6 || _statue3.transform.rotation.z >= -0.6 && _statue3.transform.rotation.z <= -0.2){
+        //(St-Joseph)
+        if (_statue3.transform.rotation.z >= 0.6 && _statue3.transform.rotation.z <= 0.8 || _statue3.transform.rotation.z >= -0.8 && _statue3.transform.rotation.z <= -0.6){
             isGood3 = true;
         }else{
             isGood3 = false;
         }
 
-        //EST (St-Jude)
-        if (_statue4.transform.rotation.z >= 0.3 && _statue4.transform.rotation.z <= 0.6 || _statue4.transform.rotation.z >= -0.6 && _statue4.transform.rotation.z <= -0.3){
+        //(St-Jude)
+        if (_statue4.transform.rotation.z >= 0.6 && _statue4.transform.rotation.z <= 0.8 || _statue4.transform.rotation.z >= -0.8 && _statue4.transform.rotation.z <= -0.6){
             isGood4 = true;
         }else{
             isGood4 = false;
