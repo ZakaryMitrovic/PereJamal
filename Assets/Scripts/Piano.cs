@@ -28,6 +28,9 @@ public class Piano : MonoBehaviour
         isGood3 = false;
         isGood4 = false;
     }
+    public void JouerNoteVictoire(int noteIndex){
+        _audio.PlayOneShot(_note[noteIndex]);
+    }
 
     public void JouerNote(int noteIndex){
         _anim.SetTrigger(notes[noteIndex]);
