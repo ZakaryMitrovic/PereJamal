@@ -36,7 +36,7 @@ Sons:
     Son activation briquet: https://freesound.org/people/SpaceJoe/sounds/524105/
     Pour les statues: https://freesound.org/people/Pusteblumi/sounds/205145/
     Pour les chandelles: https://freesound.org/people/140178sound/sounds/325559/  (J'ai modifier le son sur audition)
-    Échouer le piano: https://freesound.org/people/InspectorJ/sounds/397438/
+    Son lorsqu'on échoue le piano: https://freesound.org/people/InspectorJ/sounds/397438/
     
     Ambiance:
         Son de tonnère 1: https://www.youtube.com/watch?v=vJ08fwaLXwg
