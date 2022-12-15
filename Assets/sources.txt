@@ -22,34 +22,24 @@ https://drive.google.com/file/d/10b39IekUdpBHlcTslZ-BlNRyH5uqPUe1/view (Donné p
 https://developer.oculus.com/downloads/package/oculus-hand-models/
 
 Sons:
-    https://freesound.org/people/Jaz_the_MAN_2/sounds/316912/
-    https://freesound.org/people/Jaz_the_MAN_2/sounds/316908/
-    https://freesound.org/people/Jaz_the_MAN_2/sounds/316906/
-    https://freesound.org/people/Jaz_the_MAN_2/sounds/316904/
-    https://freesound.org/people/Jaz_the_MAN_2/sounds/316902/
-    https://freesound.org/people/Jaz_the_MAN_2/sounds/316901/
-    https://freesound.org/people/Jaz_the_MAN_2/sounds/316913/
-    https://freesound.org/people/Jaz_the_MAN_2/sounds/316898/
-    https://freesound.org/people/Jaz_the_MAN_2/sounds/316913/
-    https://freesound.org/people/IPaddeh/sounds/422858/
-    https://freesound.org/people/SoundDesignForYou/sounds/646689/
-    https://freesound.org/people/lennyboy/sounds/275182/
-    https://freesound.org/people/VitaminL/sounds/244992/
-    https://freesound.org/people/jemburyturner/sounds/273466/
-    https://freesound.org/people/DrMinky/sounds/167048/
-    https://freesound.org/people/32cheeseman32/sounds/175942/
-    https://freesound.org/people/SpaceJoe/sounds/524105/
-    https://freesound.org/people/mfearnley/sounds/434145/
-    https://freesound.org/people/kellyconidi/sounds/218829/
-    https://freesound.org/people/MihirFreeSound/sounds/410972/
-    https://freesound.org/people/an_tony/sounds/218725/
-    https://freesound.org/people/Martineerok/sounds/486406/
-    https://freesound.org/people/InspectorJ/sounds/346641/
-    https://freesound.org/people/icaroferre/sounds/86891/
+    Notes de piano:
+        Sol: https://freesound.org/people/Jaz_the_MAN_2/sounds/316912/
+        Re: https://freesound.org/people/Jaz_the_MAN_2/sounds/316908/
+        Mi: https://freesound.org/people/Jaz_the_MAN_2/sounds/316906/
+        Fa: https://freesound.org/people/Jaz_the_MAN_2/sounds/316904/
+        La: https://freesound.org/people/Jaz_the_MAN_2/sounds/316902/
+        Do: https://freesound.org/people/Jaz_the_MAN_2/sounds/316898/
+        Si: https://freesound.org/people/Jaz_the_MAN_2/sounds/316913/
+
+    Son porte ouverture: https://freesound.org/people/jemburyturner/sounds/273466/
+    Son levier activation: https://freesound.org/people/DrMinky/sounds/167048/
+    Son activation briquet: https://freesound.org/people/SpaceJoe/sounds/524105/
     Pour les statues: https://freesound.org/people/Pusteblumi/sounds/205145/
     Pour les chandelles: https://freesound.org/people/140178sound/sounds/325559/  (J'ai modifier le son sur audition)
     Échouer le piano: https://freesound.org/people/InspectorJ/sounds/397438/
-    https://www.youtube.com/watch?v=vJ08fwaLXwg
-    https://www.youtube.com/watch?v=ki4a4d7wJRQ
-    https://www.youtube.com/watch?v=T-BOPr7NXME
-    https://www.youtube.com/watch?v=hWObtGci4t0&t
+    
+    Ambiance:
+        Son de tonnère 1: https://www.youtube.com/watch?v=vJ08fwaLXwg
+        Son de tonnère 2: https://www.youtube.com/watch?v=ki4a4d7wJRQ
+        Son de tonnère 3: https://www.youtube.com/watch?v=T-BOPr7NXME
+        Son de pluie: https://www.youtube.com/watch?v=hWObtGci4t0&t
