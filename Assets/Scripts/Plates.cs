@@ -10,6 +10,7 @@ public class Plates : MonoBehaviour
     [SerializeField] private AudioSource _audioPlaque3;
     [SerializeField] private AudioSource _audioPlaque4;
     [SerializeField] private AudioClip _sonPressure;
+    [SerializeField] private AudioClip _succeed;
     [SerializeField] private LumierePuzzle _light;
     [SerializeField] private Rigidbody[] _rbLevier;
     [SerializeField] private TurnTable _disque;
@@ -79,6 +80,7 @@ public class Plates : MonoBehaviour
                         }
                         _light.AllumerLight(3);
                         _disque.JouerAudio();
+                        _audioPlaque4.PlayOneShot(_succeed);
                     }
                 }else if(isGood4 == true){
                     isGood1=false;

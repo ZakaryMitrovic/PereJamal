@@ -9,7 +9,9 @@ public class Candle : MonoBehaviour
     [SerializeField] private LumierePuzzle _light;
     [SerializeField] private Plates _plates;
     [SerializeField] private AudioClip sonFeu;
+    [SerializeField] private AudioClip _succeed;
     [SerializeField] private AudioSource _audio;
+    [SerializeField] private AudioSource _audioParent;
     public bool allumer = false;
     [SerializeField] private bool _alreadyLight;
 
@@ -51,6 +53,7 @@ public class Candle : MonoBehaviour
         {
             _light.AllumerLight(2);
             _plates.isAtPuzzle3 = true;
+            _audioParent.PlayOneShot(_succeed);
         }
     }
 

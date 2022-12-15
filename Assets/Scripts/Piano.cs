@@ -7,6 +7,7 @@ public class Piano : MonoBehaviour
     [SerializeField] Animator _anim;
     [SerializeField] GameObject _briquet;
     [SerializeField] AudioClip[] _note;
+    [SerializeField] AudioClip _succeed;
     [SerializeField] AudioSource _audio;
     [SerializeField] LumierePuzzle _lumierePuzzle;
 
@@ -61,6 +62,7 @@ public class Piano : MonoBehaviour
                     if(isGood4 == true){
                         _briquet.SetActive(true);
                         _lumierePuzzle.AllumerLight(5);
+                        _audio.PlayOneShot(_succeed);
                     }
                 }else if(isGood4 == true){
                     _audio.PlayOneShot(_note[7]);

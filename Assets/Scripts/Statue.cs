@@ -12,7 +12,9 @@ public class Statue : MonoBehaviour
     [SerializeField] private PortesSousSol pS;
     [SerializeField] private LumierePuzzle pLight;
     [SerializeField] private AudioSource pSAudio;
+    [SerializeField] private AudioSource _audio;
     [SerializeField] private AudioClip SonPorte;
+    [SerializeField] private AudioClip _succeed;
 
     bool isGood1;
     bool isGood2;
@@ -31,7 +33,6 @@ public class Statue : MonoBehaviour
     void Update()
     {
         CheckStatues();
-        Validation();
         //Debug.Log("IsGood1: "+isGood1);
         //Debug.Log("IsGood2: "+isGood2);
         Debug.Log("IsGood3: "+isGood3);
@@ -69,6 +70,7 @@ public class Statue : MonoBehaviour
         }else{
             isGood4 = false;
         }
+        Validation();
     }
 
     void Validation(){
@@ -76,6 +78,7 @@ public class Statue : MonoBehaviour
             pS.DebarrerPorteSousSol();
             pSAudio.PlayOneShot(SonPorte);
             pLight.AllumerLight(4);
+            _audio.PlayOneShot(_succeed);
         }
     }
 }
