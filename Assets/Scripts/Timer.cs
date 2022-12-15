@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class Timer : MonoBehaviour
 {
     [SerializeField] private TextMeshPro _time;
-    private int temps = 6;
+    private int temps = 600;
     private bool _isFading;
     public GameObject fadeScreen;
     private float duration;
@@ -39,7 +39,7 @@ public class Timer : MonoBehaviour
             fadeScreen.GetComponent<MeshRenderer>().material.color = new Color(0f, 0f, 0f, duration);
             yield return new WaitForSeconds(0.01f);
         }           
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(1f);
 
         SceneManager.LoadScene("Mort");
     }
