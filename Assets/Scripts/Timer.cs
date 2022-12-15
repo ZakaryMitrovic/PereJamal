@@ -16,7 +16,7 @@ public class Timer : MonoBehaviour
     void Start()
     {
         StartCoroutine("Horloge");
-        fadeScreen.GetComponent<MeshRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0f);
+        fadeScreen.GetComponent<MeshRenderer>().material.color = new Color(0f, 0f, 0f, 0f);
     }
     
     IEnumerator Horloge()
@@ -29,18 +29,18 @@ public class Timer : MonoBehaviour
             int seconde = temps - min*60;
             _time.text = min + ":" + seconde;
         }
+        StartCoroutine("FadeOut");
+    }
 
-
-
-
+    IEnumerator FadeOut(){
         while(duration < 1f)
         {
             duration += 0.01f;
             fadeScreen.GetComponent<MeshRenderer>().material.color = new Color(0f, 0f, 0f, duration);
             yield return new WaitForSeconds(0.01f);
         }           
-            yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(1);
 
-            SceneManager.LoadScene("Mort");
+        SceneManager.LoadScene("Mort");
     }
 }
