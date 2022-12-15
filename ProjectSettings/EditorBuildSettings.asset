@@ -14,6 +14,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Mort.unity
     guid: 301d2634b118a6343b0211a846252cb4
+  - enabled: 1
+    path: Assets/Scenes/Victoire.unity
+    guid: 73cdc4c3efc17084b85749d6a66cbd01
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: f052a1e3a38fde043862cb3ec6360e20,
       type: 2}
