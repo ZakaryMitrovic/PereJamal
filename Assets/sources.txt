@@ -1,8 +1,8 @@
 Sources:
-Font sang: https://www.1001fonts.com/youmurderer-bb-font.html
-Font Church: https://www.dafont.com/church-text-b.font
-Font gotham: https://freefontsfamily.com/gotham-font-family/
-Font montre: https://www.1001fonts.com/digital-7-font.html
+    Font sang: https://www.1001fonts.com/youmurderer-bb-font.html
+    Font Church: https://www.dafont.com/church-text-b.font
+    Font gotham: https://freefontsfamily.com/gotham-font-family/
+    Font montre: https://www.1001fonts.com/digital-7-font.html
 
 Images:
     Image prètre: https://unsplash.com/photos/hAZHhZ3RFL8
@@ -45,6 +45,7 @@ Sons:
     Pour les statues: https://freesound.org/people/Pusteblumi/sounds/205145/
     Pour les chandelles: https://freesound.org/people/140178sound/sounds/325559/  (J'ai modifier le son sur audition)
     Son lorsqu'on échoue le piano: https://freesound.org/people/InspectorJ/sounds/397438/
+    Musique: BandLab
     
     Ambiance:
         Son de tonnère 1: https://www.youtube.com/watch?v=vJ08fwaLXwg

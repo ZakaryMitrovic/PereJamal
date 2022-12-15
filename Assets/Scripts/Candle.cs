@@ -32,7 +32,9 @@ public class Candle : MonoBehaviour
         GetComponent<MeshRenderer>().materials = mats;
 
         _audio = GetComponent<AudioSource>();
-        _audio.PlayOneShot(sonFeu);
+        if(_alreadyLight == false){
+            _audio.PlayOneShot(sonFeu);
+        }
 
         allumer = true;
 

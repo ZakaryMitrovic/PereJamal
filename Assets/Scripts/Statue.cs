@@ -35,8 +35,8 @@ public class Statue : MonoBehaviour
         CheckStatues();
         //Debug.Log("IsGood1: "+isGood1);
         //Debug.Log("IsGood2: "+isGood2);
-        Debug.Log("IsGood3: "+isGood3);
-        Debug.Log("IsGood4: "+isGood4);
+        // Debug.Log("IsGood3: "+isGood3);
+        // Debug.Log("IsGood4: "+isGood4);
         //Debug.Log(_statue2.transform.rotation.z);
     }
 
