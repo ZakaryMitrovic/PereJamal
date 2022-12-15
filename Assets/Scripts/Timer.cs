@@ -7,27 +7,40 @@ using UnityEngine.SceneManagement;
 public class Timer : MonoBehaviour
 {
     [SerializeField] private TextMeshPro _time;
-    private int temps = 600;
+    private int temps = 6;
+    private bool _isFading;
+    public GameObject fadeScreen;
+    private float duration;
+
     // Start is called before the first frame update
     void Start()
     {
         StartCoroutine("Horloge");
+        fadeScreen.GetComponent<MeshRenderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0f);
     }
-
-    // Update is called once per frame
-    void Update()
+    
+    IEnumerator Horloge()
     {
-        
-    }
-    IEnumerator Horloge(){
-        while(temps >= 0){
+        while(temps >= 0)
+        {
             yield return new WaitForSeconds(1f);
             temps = temps - 1;
             int min = temps/60;
             int seconde = temps - min*60;
-            string secondeString = seconde < 10 ? "0" + seconde : seconde.ToString();
-            _time.text = min + ":" + secondeString;
+            _time.text = min + ":" + seconde;
         }
-        SceneManager.LoadScene("Mort");
+
+
+
+
+        while(duration < 1f)
+        {
+            duration += 0.01f;
+            fadeScreen.GetComponent<MeshRenderer>().material.color = new Color(0f, 0f, 0f, duration);
+            yield return new WaitForSeconds(0.01f);
+        }           
+            yield return new WaitForSeconds(1);
+
+            SceneManager.LoadScene("Mort");
     }
 }
