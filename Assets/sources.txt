@@ -1,6 +1,12 @@
 Sources:
 Font sang: https://www.1001fonts.com/youmurderer-bb-font.html
 Font Church: https://www.dafont.com/church-text-b.font
+Font gotham: https://freefontsfamily.com/gotham-font-family/
+
+Images:
+    Image prètre: https://unsplash.com/photos/hAZHhZ3RFL8
+    Image église: https://unsplash.com/photos/qfEEDNfAi5M
+
 Textures:
     Papier: https://www.freepik.com/free-photo/vintage-grunge-paper-background_5405364.htm#query=grunge%20paper&position=0&from_view=keyword
     Lune: https://svs.gsfc.nasa.gov/4720
@@ -11,6 +17,7 @@ Textures:
     Bois: https://www.textures.com/download/3DScans0581/136964
     Statue: https://www.textures.com/download/3DScans0398/132974
     Disque du tourne disque: https://www.pngegg.com/fr/png-fsckq
+    Texture du cork: https://www.textures.com/search?q=cork
 
 Modèles:
     Chapeau de police: https://sketchfab.com/3d-models/police-hat-3ccb6b620ee34fc0a1c1b403d11eca9b
