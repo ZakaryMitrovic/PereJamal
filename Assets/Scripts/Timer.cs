@@ -20,15 +20,14 @@ public class Timer : MonoBehaviour
         
     }
     IEnumerator Horloge(){
-        while(true){
+        while(temps >= 0){
             yield return new WaitForSeconds(1f);
             temps = temps - 1;
             int min = temps/60;
             int seconde = temps - min*60;
-            _time.text = min + ":" + seconde;
+            string secondeString = seconde < 10 ? "0" + seconde : seconde.ToString();
+            _time.text = min + ":" + secondeString;
         }
-        if(temps <= 0){
-            SceneManager.LoadScene("Mort");
-        }
+        SceneManager.LoadScene("Mort");
     }
 }
