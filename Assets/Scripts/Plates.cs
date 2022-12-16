@@ -9,8 +9,10 @@ public class Plates : MonoBehaviour
     [SerializeField] private AudioSource _audioPlaque2;
     [SerializeField] private AudioSource _audioPlaque3;
     [SerializeField] private AudioSource _audioPlaque4;
+    [SerializeField] private AudioSource _audio;
     [SerializeField] private AudioClip _sonPressure;
     [SerializeField] private AudioClip _succeed;
+    [SerializeField] private AudioClip _fail;
     [SerializeField] private LumierePuzzle _light;
     [SerializeField] private Rigidbody[] _rbLevier;
     [SerializeField] private TurnTable _disque;
@@ -87,18 +89,21 @@ public class Plates : MonoBehaviour
                     isGood2=false;
                     isGood3=false;
                     isGood4=false;
+                    _audio.PlayOneShot(_fail);
                 }
             }else if(isGood4 == true || isGood3==true){
                 isGood1=false;
                 isGood2=false;
                 isGood3=false;
                 isGood4=false;
+                _audio.PlayOneShot(_fail);
             }
         }else{
             isGood1=false;
             isGood2=false;
             isGood3=false;
             isGood4=false;
+            _audio.PlayOneShot(_fail);
         }
     }
 }
