@@ -43,7 +43,7 @@ public class Candle : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Fire"))
+        if(other.CompareTag("Fire") && allumer == false)
         {
             Allumer();
         }

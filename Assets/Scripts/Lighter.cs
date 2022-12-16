@@ -15,6 +15,9 @@ public class Lighter : MonoBehaviour
     public GameObject _montre;
     public GameObject _timer;
 
+    [SerializeField] private LumierePuzzle _lumierePuzzle;
+    private bool pickUpForFirstTime = true;
+
     public void Allumer()
     {
         _fire.SetActive(true);
@@ -42,5 +45,13 @@ public class Lighter : MonoBehaviour
         _rightHand.SetActive(false);
         _montre.GetComponent<Renderer>().enabled = true;
         _timer.GetComponent<Renderer>().enabled = true;
+    }
+
+    public void ChangeLight()
+    {
+        if(pickUpForFirstTime){
+            pickUpForFirstTime = false;
+            _lumierePuzzle.AllumerLight(1);
+        }
     }
 }

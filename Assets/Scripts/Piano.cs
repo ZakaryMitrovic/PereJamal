@@ -16,6 +16,8 @@ public class Piano : MonoBehaviour
     private bool isGood3;
     private bool isGood4;
 
+    private bool _puzzleReussi;
+
     string[] notes = {"Do", "Re", "Mi", "Fa", "Sol", "La", "Si"};
 
     // Start is called before the first frame update
@@ -53,13 +55,16 @@ public class Piano : MonoBehaviour
             Debug.Log("FA");
             isGood4=true;
         }
-        ValidationNote();
+        if(_puzzleReussi == false){
+            ValidationNote(); 
+        }
     }
     void ValidationNote(){
         if(isGood1 == true){
             if(isGood2 == true){
                 if(isGood3 == true){
                     if(isGood4 == true){
+                        _puzzleReussi = true;
                         _briquet.SetActive(true);
                         _lumierePuzzle.AllumerLight(5);
                         _audio.PlayOneShot(_succeed);
