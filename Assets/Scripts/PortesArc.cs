@@ -9,6 +9,7 @@ public class PortesArc : MonoBehaviour
     [SerializeField] private GameObject _key;
     [SerializeField] private AudioSource _audio;
     [SerializeField] private AudioClip _sonPorte;
+    [SerializeField] private AudioClip _sonPorteFin;
     public GameObject fadeScreen;
     private float duration;
     // Start is called before the first frame update
@@ -28,6 +29,7 @@ public class PortesArc : MonoBehaviour
         _anim.SetBool("OuvrirPortes", true);
         Destroy(_key);
         StartCoroutine("Fin");
+        _audio.PlayOneShot(_sonPorteFin);
     }
 
     IEnumerator Fin(){
