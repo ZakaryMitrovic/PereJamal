@@ -13,6 +13,8 @@ public class Lever : MonoBehaviour
     public XRDirectInteractor rHand, lHand;
     public GameObject _leftHand;
     public GameObject _rightHand;
+    public GameObject _montre;
+    public GameObject _timer;
 
 
     private bool dejaActiver = false;
@@ -43,15 +45,21 @@ public class Lever : MonoBehaviour
     public void ActiverLevier(){
         if(lHand.hasSelection == true){
             _leftHand.SetActive(true);
+            _montre.GetComponent<Renderer>().enabled = false;
+            _timer.GetComponent<Renderer>().enabled = false;
         }else if(rHand.hasSelection == true){
             _rightHand.SetActive(true);
         }else{
             _leftHand.SetActive(false);
             _rightHand.SetActive(false);
+            _montre.GetComponent<Renderer>().enabled = true;
+            _timer.GetComponent<Renderer>().enabled = true;
         }
     }
     public void EnleverMain(){
         _leftHand.SetActive(false);
         _rightHand.SetActive(false);
+        _montre.GetComponent<Renderer>().enabled = true;
+        _timer.GetComponent<Renderer>().enabled = true;
     }
 }
