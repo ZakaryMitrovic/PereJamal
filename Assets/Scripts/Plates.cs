@@ -22,6 +22,7 @@ public class Plates : MonoBehaviour
     private bool isGood3;
     private bool isGood4;
     public bool isAtPuzzle3;
+    private bool _puzzleReussi;
     // Start is called before the first frame update
     void Start()
     {
@@ -44,32 +45,36 @@ public class Plates : MonoBehaviour
 
     public void PeserPlaque1(){
         if(isAtPuzzle3==true){
-            Debug.Log("LOL1");
             isGood1=true;
             _audioPlaque1.PlayOneShot(_sonPressure);
         }
-        Validation();
+        if(_puzzleReussi == false){
+            Validation(); 
+        }
     }
     public void PeserPlaque2(){
         if(isAtPuzzle3==true){
-        Debug.Log("LOL2");
         isGood2=true;
         _audioPlaque2.PlayOneShot(_sonPressure);}
-        Validation();
+        if(_puzzleReussi == false){
+            Validation(); 
+        }
     }
     public void PeserPlaque3(){
         if(isAtPuzzle3==true){
-        Debug.Log("LOL3");
         isGood3=true;
         _audioPlaque3.PlayOneShot(_sonPressure);}
-        Validation();
+        if(_puzzleReussi == false){
+            Validation(); 
+        }
     }
     public void PeserPlaque4(){
         if(isAtPuzzle3==true){
-        Debug.Log("LOL4");
         isGood4=true;
         _audioPlaque4.PlayOneShot(_sonPressure);}
-        Validation();
+        if(_puzzleReussi == false){
+            Validation(); 
+        }
     }
 
     public void Validation(){
@@ -83,6 +88,7 @@ public class Plates : MonoBehaviour
                         _light.AllumerLight(3);
                         _disque.JouerAudio();
                         _audioPlaque4.PlayOneShot(_succeed);
+                        _puzzleReussi = true;
                     }
                 }else if(isGood4 == true){
                     isGood1=false;
