@@ -7,6 +7,8 @@ public class PortesArc : MonoBehaviour
 {
     [SerializeField] private Animator _anim;
     [SerializeField] private GameObject _key;
+    [SerializeField] private AudioSource _audio;
+    [SerializeField] private AudioClip _sonPorte;
     public GameObject fadeScreen;
     private float duration;
     // Start is called before the first frame update
@@ -14,6 +16,7 @@ public class PortesArc : MonoBehaviour
     {
         _anim = GetComponent<Animator>();
         _anim.SetBool("OuvrirPortes", false);
+        _audio.PlayOneShot(_sonPorte);
     }
 
     // Update is called once per frame

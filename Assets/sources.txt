@@ -3,6 +3,7 @@ Sources:
     Font Church: https://www.dafont.com/church-text-b.font
     Font gotham: https://freefontsfamily.com/gotham-font-family/
     Font montre: https://www.1001fonts.com/digital-7-font.html
+    Font Écrit à la main (The Plan): https://www.1001fonts.com/architext-font.html
 
 Images:
     Image prètre: https://unsplash.com/photos/hAZHhZ3RFL8
@@ -45,6 +46,7 @@ Sons:
     Pour les statues: https://freesound.org/people/Pusteblumi/sounds/205145/
     Pour les chandelles: https://freesound.org/people/140178sound/sounds/325559/  (J'ai modifier le son sur audition)
     Son lorsqu'on échoue le piano: https://freesound.org/people/InspectorJ/sounds/397438/
+    Pour la porte qui ferme dans l'intro: https://freesound.org/people/supersplat1/sounds/388013/
     Musique: BandLab
     
     Ambiance:
