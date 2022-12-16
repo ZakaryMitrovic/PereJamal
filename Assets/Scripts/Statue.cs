@@ -20,6 +20,9 @@ public class Statue : MonoBehaviour
     bool isGood2;
     bool isGood3;
     bool isGood4;
+
+    private bool doorIsOpen = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -32,7 +35,9 @@ public class Statue : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        CheckStatues();
+        if(doorIsOpen == false){
+            CheckStatues();
+        }
         //Debug.Log("IsGood1: "+isGood1);
         //Debug.Log("IsGood2: "+isGood2);
         // Debug.Log("IsGood3: "+isGood3);
@@ -73,8 +78,9 @@ public class Statue : MonoBehaviour
         Validation();
     }
 
-    void Validation(){
+    void Validation() {
         if (isGood1 == true && isGood2 == true && isGood3 == true && isGood4 == true){
+            doorIsOpen = true;
             pS.DebarrerPorteSousSol();
             pSAudio.PlayOneShot(SonPorte);
             pLight.AllumerLight(4);
