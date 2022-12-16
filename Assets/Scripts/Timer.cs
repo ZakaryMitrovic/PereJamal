@@ -24,10 +24,7 @@ public class Timer : MonoBehaviour
     }
 
     IEnumerator Intro(){
-        //ajout son ported
-
         yield return new WaitForSeconds(5f); //changer dependament de la longeur du son
-
         //fade in
         while(duration2 > 0f)
         {
