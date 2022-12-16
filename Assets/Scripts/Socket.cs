@@ -17,7 +17,7 @@ public class Socket : MonoBehaviour
     private bool isGood2;
     private bool isGood3;
     private bool isGood4;
-
+    private bool _puzzleReussi;
     public Nametag scriptNametagJonathan;
     public Nametag scriptNametagOlivier;
     public Nametag scriptNametagMathis;
@@ -36,6 +36,7 @@ public class Socket : MonoBehaviour
     }
     
     public void SocketFinal(){
+        _puzzleReussi = true;
         key.SetActive(true);
         lumierePuzzle.AllumerLight(6);
         AllumerLumiereFinale();
@@ -59,10 +60,12 @@ public class Socket : MonoBehaviour
         if(socket[3] == other.CompareTag("Z")){
             isGood4=true;
         }
-        Validation();
+        if(_puzzleReussi == false){
+            Validation(); 
+        }
     }
     void Validation(){
-         if(isGood1==true && isGood2==true && isGood3==true && isGood4 == true){
+        if(isGood1==true && isGood2==true && isGood3==true && isGood4 == true){
             SocketFinal();
         }
     }
