@@ -21,7 +21,7 @@ public class Statue : MonoBehaviour
     bool isGood3;
     bool isGood4;
 
-    private bool doorIsOpen = false;
+    public bool doorIsOpen = false;
 
     // Start is called before the first frame update
     void Start()

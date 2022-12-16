@@ -10,6 +10,8 @@ public class Lever : MonoBehaviour
     [SerializeField] private AudioSource _audioStatue;
     [SerializeField] private AudioClip _sonLever;
     [SerializeField] private GameObject _Statue;
+    [SerializeField] private Statue _statues;
+
     public XRDirectInteractor rHand, lHand;
     public GameObject _leftHand;
     public GameObject _rightHand;
@@ -31,8 +33,12 @@ public class Lever : MonoBehaviour
     void Update()
     {
         if(hJ.angle >= 90){
-            _Statue.transform.Rotate(0,0,1f);
-            _audioStatue.enabled = true;
+            if(_statues.doorIsOpen == false) {
+                _Statue.transform.Rotate(0,0,1f);
+                _audioStatue.enabled = true;
+            } else {
+                _audioStatue.enabled = false;
+            }
             if(dejaActiver == false){
                 dejaActiver = true;
                 _audio.PlayOneShot(_sonLever);
