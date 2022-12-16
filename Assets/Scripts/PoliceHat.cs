@@ -28,12 +28,8 @@ public class PoliceHat : MonoBehaviour
             _timer.GetComponent<Renderer>().enabled = false;
         }else if(rHand.hasSelection == true){
             _rightHand.SetActive(true);
-        }else{
-            _leftHand.SetActive(false);
-            _rightHand.SetActive(false);
-            _montre.GetComponent<Renderer>().enabled = true;
-            _timer.GetComponent<Renderer>().enabled = true;
         }
+      
     }
     public void EnleverMain(){
         _leftHand.SetActive(false);

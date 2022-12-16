@@ -8,7 +8,7 @@ public class PortesArc : MonoBehaviour
     [SerializeField] private Animator _anim;
     [SerializeField] private GameObject _key;
     [SerializeField] private AudioSource _audio;
-    [SerializeField] private AudioClip _sonPorte;
+    [SerializeField] private AudioClip _sonPorteDebut;
     [SerializeField] private AudioClip _sonPorteFin;
     public GameObject fadeScreen;
     private float duration;
@@ -17,7 +17,7 @@ public class PortesArc : MonoBehaviour
     {
         _anim = GetComponent<Animator>();
         _anim.SetBool("OuvrirPortes", false);
-        _audio.PlayOneShot(_sonPorte);
+        _audio.PlayOneShot(_sonPorteDebut);
     }
 
     // Update is called once per frame
@@ -26,10 +26,10 @@ public class PortesArc : MonoBehaviour
         
     }
     public void OuvrirPortesArc(){
+        _audio.PlayOneShot(_sonPorteFin);
         _anim.SetBool("OuvrirPortes", true);
         Destroy(_key);
         StartCoroutine("Fin");
-        _audio.PlayOneShot(_sonPorteFin);
     }
 
     IEnumerator Fin(){

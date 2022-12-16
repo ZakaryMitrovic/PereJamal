@@ -18,17 +18,13 @@ public class Key : MonoBehaviour
     }
 
     public void AjoutMain(){
-       if(lHand.hasSelection == true){
+        if(lHand.hasSelection == true){
             _leftHand.SetActive(true);
             _montre.GetComponent<Renderer>().enabled = false;
             _timer.GetComponent<Renderer>().enabled = false;
-        }else if(rHand.hasSelection == true){
+        }
+        if(rHand.hasSelection == true){
             _rightHand.SetActive(true);
-        }else{
-            _leftHand.SetActive(false);
-            _rightHand.SetActive(false);
-            _montre.GetComponent<Renderer>().enabled = true;
-            _timer.GetComponent<Renderer>().enabled = true;
         }
     }
     public void EnleverMain(){

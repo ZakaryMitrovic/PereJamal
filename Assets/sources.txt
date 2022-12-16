@@ -48,7 +48,7 @@ Sons:
     Son lorsqu'on échoue le piano: https://freesound.org/people/InspectorJ/sounds/397438/
     Pour la porte qui ferme dans l'intro: https://freesound.org/people/supersplat1/sounds/388013/
     Porte d'arc: https://freesound.org/people/InspectorJ/sounds/431117/
-    Musique: BandLab
+    Musique: https://www.bandlab.com/user7407150143954501/new-project-be46cb4d?revId=e63ce247-c17c-ed11-9f5e-000d3a980004
     
     Ambiance:
         Son de tonnère 1: https://www.youtube.com/watch?v=vJ08fwaLXwg
