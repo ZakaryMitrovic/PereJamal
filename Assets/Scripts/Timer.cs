@@ -8,17 +8,36 @@ public class Timer : MonoBehaviour
 {
     [SerializeField] private TextMeshPro _time;
     private int temps = 600;
-    private bool _isFading;
     public GameObject fadeScreen;
     private float duration;
+    private float duration2;
 
     // Start is called before the first frame update
     void Start()
     {
+        duration2 = 1f;
+        StartCoroutine("Intro");
         StartCoroutine("Horloge");
-        fadeScreen.GetComponent<MeshRenderer>().material.color = new Color(0f, 0f, 0f, 0f);
+        fadeScreen.GetComponent<MeshRenderer>().material.color = new Color(0f, 0f, 0f, 1f);
     }
-    
+
+    void Update(){
+        Debug.Log(duration2);
+    }
+
+    IEnumerator Intro(){
+        //ajout son ported
+
+        yield return new WaitForSeconds(3f); //changer dependament de la longeur du son
+
+        //fade in
+        while(duration2 > 0f)
+        {
+            duration2 = duration2 - 0.01f;
+            fadeScreen.GetComponent<MeshRenderer>().material.color = new Color(0f, 0f, 0f, duration2);
+            yield return new WaitForSeconds(0.01f);
+        }   
+    }
     IEnumerator Horloge()
     {
         while(temps >= 0)
@@ -27,7 +46,7 @@ public class Timer : MonoBehaviour
             temps = temps - 1;
             int min = temps/60;
             int seconde = temps - min*60;
-            _time.text = min + ":" + seconde;
+            _time.text = min + ":" + seconde.ToString("D2");
         }
         StartCoroutine("FadeOut");
     }

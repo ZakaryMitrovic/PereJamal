@@ -743,6 +743,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 588751bd324e38c40a69eeeabf943a8d, type: 3}
   - {fileID: 8300000, guid: e13b9fa7fbd6d6d4badb45f7d18a69e9, type: 3}
   - {fileID: 8300000, guid: 85d243d336686a94abda3df517ebbf42, type: 3}
+  _succeed: {fileID: 0}
   _audio: {fileID: 94162430}
   _lumierePuzzle: {fileID: 0}
 --- !u!4 &94162433
@@ -753,7 +754,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 94162429}
   m_LocalRotation: {x: 0, y: 0.7071068, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: 0, y: 0.402, z: -3.99}
+  m_LocalPosition: {x: 0, y: 0.299, z: -3.99}
   m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
   m_ConstrainProportionsScale: 1
   m_Children:
